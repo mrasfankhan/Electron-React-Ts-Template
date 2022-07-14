@@ -1,0 +1,141 @@
+.App {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 0px 0px;
+  color: azure;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Sidebar
+{
+  height: 100vh; width: 55px;
+  font-size: 30px;
+  background-color: #19446d;
+}
+
+.Page
+{
+  background-color: #282c34;
+  height: 100vh; width: calc(100% - 55px);
+  /* line-height: 75px;
+  font-size: 30px; */
+}
+
+.Btn 
+{
+  background-color: #0b3c69;
+  color: white;
+  width: 100%; height: 55px;
+  line-height: 55px;
+  transition: .5s;
+  cursor: pointer;
+  margin-top: 7.5px;
+}
+.Btn:hover
+{
+  background-color: #145088;
+  transition: .5s;
+}
+.Btn:active
+{
+  background-color: #0b3c69;
+  transition: .5s;
+}
+
+.PermissionsPage
+{
+  height: 100%;
+  width: 300px;
+  right: 0px;
+  position: absolute;
+  background: #093156;
+  flex-direction: column;
+
+}
+.PermissionsTitle
+{
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+}
+.PermissionsMenuMinimize
+{
+  width: 50px;
+  background: #0b3c69;
+  cursor: pointer;
+  transition: .5s;
+}
+.PermissionsMenuMinimize:hover
+{
+  background-color: #145088;
+  transition: .5s;
+}
+.PermissionsTitleText
+{
+  flex: 1 1 auto;
+}
+.PermissionsPanel
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background: #2e3136;
+  align-content: flex-start;
+  height: calc(100% - 50px);
+}
+
+.PermissionsPanelBtn
+{
+  height: 70px;
+  cursor: pointer;
+  line-height: 70px;
+  background: #0b3c69;
+  flex: 1 1 auto;
+  transition: .5s;
+}
+.PermissionsPanelBtn:hover
+{
+  background-color: #145088;
+  transition: .5s;
+}
+.PermissionsPanelBtn:active
+{
+  background-color: #0b3c69;
+  transition: .5s;
+}
